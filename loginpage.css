@@ -1,0 +1,60 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(248, 249, 154);
+}
+.wholepage{
+    border: 2px solid white;
+    box-shadow: 0px 0px 20px;
+    border-radius: 20px;
+    width: 400px;
+    height: 400px;
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(250, 255, 220)
+}
+.input-fields{
+    margin: 40px;
+}
+.input-fields input{
+    padding: 20px;
+    width: 80%;
+    border: 1px solid ;
+}
+.btn{
+    padding:30px;
+
+}
+button{
+    padding:20px;
+    border: 1px solid;
+    color: rgb(20, 20, 20);
+    background-color: antiquewhite;
+    border-radius: 10px;
+    width: 50%;
+}
+button:hover{
+    background-color: rgb(248, 249, 154);
+
+
+}
+h2{
+    font-family: 'Montserrat', sans-serif;
+}
+:required ::after{
+    content: "*";
+    color:brown;
+    
+}
+
+.hello{
+    margin-top: 30px;
+    width: 70px;
+    height: 60px;
+    align-items: center;
+    text-align: center;
+}
+
+

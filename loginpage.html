@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>LOGIN PAGE</title>
+        <link rel="stylesheet" type="text/css" href="loginpage.css"/>
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' >
+    </head>
+    <body>
+        <div class="wholepage">
+            <form action="" class="form">
+                <h2>LOGIN PAGE</h1>
+                    <div class="input-fields">
+                        <input type="text" id="un" placeholder="Username" required>
+                    </div>
+                    <div class="input-fields">
+                        <input type="password" id="ps" placeholder="Password" required>
+        
+                    </div>
+                    <a href="">Forgot Password?</a>
+                    <div class="btn">
+                        <button type="button" onclick="loginpage()">Sign In</button>
+                    </div>
+                    <button  class="hello" type="button" onclick="login2()">Back
+                        
+
+
+
+                    </button>
+            </form>
+        </div>
+        <script>  
+            function loginpage(){
+            var email = document.getElementById("un").value;
+            var password= document.getElementById("ps").value;
+            if(email=="admin@gmail.com" && password=="admin1"){
+                window.location.assign("coverpage.html");
+                alert("login succesfully");
+
+
+            }
+            else{
+                alert("invalid");
+                return;
+            }
+        }
+            function login2(){
+                window.location.assign("coverpage.html");
+            }
+        </script>
+        
+    </body>
+</html>

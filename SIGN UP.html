@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!-- saved from url=(0033)file:///C:/Users/hp/cookbook.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    <link rel="stylesheet" type="text/css" href="signup.css">
+    <title>SIGN UP</title>
+    </head>
+    <body>
+        <form>
+        <div class="wholepage">
+            <h1>Sign up</h1>
+            <div class="input-field">
+                <input type="text"  id="full"name="full name" placeholder="Full Name" required="">
+            </div>
+            <div class="input-field" >
+                <input type="email" id="em" name="email" placeholder="Email" required="">
+            </div>
+            <div class="input-field">
+                <input type="password" id="pass" name="password" placeholder="password" required>
+            </div>
+            <div class="input-field">
+                <input type="password" id="confirm" name="confirm password" placeholder="confirm password" required>
+            </div>
+            <button type="button" onclick="signup()">Create Account</button>
+            <p>By signing up,you agree with terms and conditions</p>
+            <p>Privacy Policy</p>
+            <div class="note">
+            <p class="hi">Already have an acoount?<a href="file:///C:/Users/hp/cookbook.html">Login in</a></p>
+            </div>
+        </div>
+        </form>
+        <script>
+            function signup(){
+                var email=document.getElementById("em").value;
+                var password=document.getElementById("pass").value;
+                var confirmpassword=document.getElementById("confirm").value;
+                if(email=="admin@gmail.com" && password=="admin1" && confirmpassword=="admin1"){
+                    window.location.assign("coverpage.html");
+                    alert("sign up Successful");
+                }
+                else{
+                    alert("invalid");
+                    returm;
+                }
+            }
+        </script>
+        
+    
+    
+
+
+</body>
+</html>
