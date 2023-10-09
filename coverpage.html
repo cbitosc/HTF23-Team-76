@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+
+
+        <title>COVER PAGE</title>
+        <link rel="stylesheet" type="text/css" href="coverpage.css"/>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    </head>
+    <body>
+        <header>
+            <p class="logo">THE FOODIES OASIS</p>
+    
+            <nav>
+                <input type="checkbox" id="check">
+                <label for="check" class="checkbtn">
+                  <i class="fas fa-bars"></i>
+                </label>
+
+                <ul class="nav-link">
+                    <li><a href="">Home</a></li>
+                    <li><a href="aboutpage.html">About us</a></li>
+                    <li><a href="SIGN UP.html">Sign Up</a></li>
+                    <li><a href="loginpage.html">Login</a></li>
+                </ul>
+
+            </nav>
+
+        </header>
+        <img  class="imagethali" src="cover.png">
+        <p class="quote">A recipe has no soul <br>You, as the cook, must bring soul to the recipe</p>
+        <div class="btn">
+            <button type="button" onclick="item()">Browse Dish</button>
+        </div>
+        <script>
+        function item(){
+            window.location.assign("itemsearch.html");
+        }
+        </script>
+
+    </body>
+
+
+</html>

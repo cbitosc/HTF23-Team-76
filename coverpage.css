@@ -1,0 +1,188 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20%;
+    background-color:rgb(248, 249, 154);
+    box-shadow: 0px 10px 50px;
+
+}
+li, a{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding-right: 30px;
+
+}
+
+.nav-link li{
+    display: inline-block;
+    padding: 0px 10px;
+    list-style: none;
+
+
+}
+.nav-link li a{
+    transition: all 0.3s ease 0s;
+
+    
+}
+.nav-link li a:hover{
+    color: rgb(16, 12, 141);
+    border: 1px solid;
+    background-color: aquamarine;
+    padding: 10px;
+    border-radius: 10px;
+
+}
+.imagethali{
+    float: right;
+    padding: 5%;
+    height: 400px;
+    width: 400px;
+}
+.logo1{
+    font-family: 'Brush Script MT',cursive;
+
+}
+.quote{
+    margin: 20px;
+    padding-top: 200px;
+    text-align: center;
+    font-size: 30px;
+    font-family:fantasy;
+}
+body{
+    background-color: rgb(247, 248, 206);
+}
+.logo2{
+    padding-right: 32%;
+    color: brown;
+    font-weight: 800;
+    font-family: 'Brush Script MT',cursive;
+}
+.btn{
+    text-align: center;
+    padding-left: 5px;
+    padding-top: 30px;
+}
+button{
+    padding: 20px;
+    font-size: small;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    display: inline-block;
+    font-weight: bold;
+    transition: all 0.3s ease all;
+    background-color: rgb(239, 253, 78);
+    text-decoration: none;
+    border: 2px solid;
+    border-radius: 8px;
+    position: relative;
+    z-index:1;
+}
+button:before{
+    transition: all 0.5s all ease;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    opacity: 0;
+    content: '';
+    background-color: brown;
+    z-index: -1;;
+
+}
+button:hover,button:focus{
+    color: rgb(255, 255, 255);
+}
+button:hover:before,button:focus::before{
+    transition: 0.5s all ease;
+    left: 0;
+    right:0;
+    opacity:1;
+
+}
+button:active{
+    transform:scale(0.9)
+}
+#check{
+    display: none;
+}
+.checkbtn{
+    cursor: pointer;
+    font-size: 30px;
+    color:rgb(0, 0, 0);
+    float: right;
+    line-height: 80px;
+    display: none;
+}
+@media (max-width: 952px){
+    p.logo{
+      font-size: 30px;
+      padding-left: 50px;
+    }
+    nav ul li a{
+      font-size: 16px;
+    }
+  }
+
+@media (max-width: 1000px){
+    .checkbtn{
+      display: block;
+    }
+    .imagethali{
+        height: 400px;
+        width: 400px;
+        align-items: center;
+        padding-right: 90px;
+    }
+
+    ul{
+      position: fixed;
+      width: 50%;
+      height: 60vh;
+      background: #5c5003;
+      top: 100px;
+      left: -200%;
+      text-align: center;
+      transition: all 0.5s;
+    }
+    nav ul li{
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
+    }
+    nav ul li a{
+      font-size: 20px;
+    }
+    a:hover,a.active{
+      background: none;
+      color: #0082e6;
+    }
+    #check:checked ~ ul{
+      left: 0;
+    }
+  }
+
+  .imagethali{
+    -webkit-animation: spin 2s linear 1s;
+    -moz-animation: spin 2s linear 1s;
+    animation: spin 2s linear 1s;
+
+  }
+  @-webkit-keyframes spin{
+    100%{-webkit-transform: rotate(360deg)};
+
+  }
+  @-moz-keyframes spin{
+    100%{-webkit-transform: rotate(360deg)};
+  }
+
+  @keyframes spin{
+    100%{-webkit-transform: rotate(360deg)};
+    
+  }

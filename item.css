@@ -1,0 +1,117 @@
+body{
+    text-align: center;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url('pexels-ella-olsson-1640777_2.jpg') ;
+    background-size: cover;
+    min-height: 100vh;
+
+
+
+}
+.PAGE{
+    padding: 20px;
+
+}
+.searchbar{
+    padding: 30px;
+}
+.sb{
+    width: 60%;
+    padding: 10px;
+    border: 1px solid;
+}
+h4{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color:transparent;
+    color: rgb(255, 255, 255);
+    letter-spacing: 2px;
+}
+button{
+    padding: 10px;
+    background-color: rgb(250, 250, 250);
+    border: 1px solid;
+
+}
+button:hover{
+    background-color:brown;
+    color: aliceblue;
+    transition-duration: 1s;
+
+}
+.sp{
+    color: rgb(255, 255, 255);
+}
+.images{
+    display: flex;
+    flex-direction: row;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+}
+
+.thali{
+    width: 280px;
+    height: 200px;
+    margin-right: 15px;
+}
+.deserts{
+    height: 200px;
+    width:280px ;
+    margin-left: 15px;
+
+
+}
+.thali:hover{
+    border: 2px solid coral;
+    transition-duration: 0.5s ;
+    box-shadow: 5px 5px 20px;
+    transform: translate3d(50px);
+    cursor: pointer;
+    
+}
+.deserts:hover{
+    border: 2px solid coral;
+    transition-duration: 0.5s ;
+    box-shadow: 5px 5px 20px;
+    transform: translate3d(50px);
+    cursor: pointer;
+    
+}
+.fn{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 10%;
+
+
+}
+.vt{
+    font-size: 25px;
+    transform: translateY(-70px);
+    transform:translateX(-300px);
+    
+    
+    color: antiquewhite;
+
+}
+.nt{
+    font-size: 25px;
+    transform: translateY(-70px);
+    transform:translateX(300px);
+    color: antiquewhite;
+
+}
+@media (max-width: 1200px){
+    .vt{
+        font-size: 25px;
+        transform: translateY(-70px);
+        color: antiquewhite;
+
+
+    
+    }
+    .nt{
+        font-size: 25px;
+        transform: translateY(-70px);
+        color: antiquewhite;
+    }
+}
